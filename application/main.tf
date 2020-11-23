@@ -8,7 +8,7 @@ resource "random_id" "random" {
 
 module "local-random" {
   source = "../modules/terraform-random-module"
-  string_length = 10
+  string_length = 9
 }
 
 output "random" {
