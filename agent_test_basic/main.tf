@@ -1,4 +1,11 @@
-resource "random_id" "hashicorp/random" {
+terraform {
+  required_providers {
+    random = {
+      source  = "hashicorp/random"
+    }
+  }
+}
+resource "random_id" "random" {
   keepers = {
     uuid = uuid()
   }
