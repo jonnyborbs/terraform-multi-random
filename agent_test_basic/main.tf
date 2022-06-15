@@ -1,4 +1,4 @@
-resource "random_id" "random" {
+resource "random_id" "hashicorp/random" {
   keepers = {
     uuid = uuid()
   }
